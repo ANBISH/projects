@@ -1,0 +1,24 @@
+@import "../base/variables";
+@import "../base/animation";
+*{
+    font-family: 'MuseoModerno', sans-serif;
+}
+.container{
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto; 
+}
+@import "promo";
+@import "header";
+@import "buttons";
+@import "advantages";
+@import "title";
+@import "consultation";
+@import "forms";
+@import "carousel";
+@import "catalog";
+@import "reviews";
+@import "footer";
+@import "modal";
+@import "pageup";
+@import "media";

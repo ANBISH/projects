@@ -1,0 +1,70 @@
+.skill{
+    padding-top: 137px;
+   
+    .divider{
+        margin: 0 auto;
+    }
+    &__wrapper{
+        
+        padding: 60px 10px 120px 10px; 
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+        grid-template-rows: repeat(2, minmax(270px, auto));
+        grid-auto-rows: repeat(auto-fill, minmax(270px, auto));
+        gap: 13px;
+        
+
+    }
+    &__item{
+        border: 1px solid #000;
+        background: rgba(196, 196, 196, 0.00);
+        padding: 30px 30px 25px 30px;
+        &-title{
+            margin-top: 20px;
+        }
+        &-descr{
+            margin-top: 15px;
+            font-size: 12px;
+        }
+    }
+    &__progress{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+        grid-template-rows: repeat(2, minmax(70px,auto));
+        grid-auto-rows:  minmax(70px,auto);
+        gap: 38px 45px;
+        
+        
+        &-item{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(145px, 35px));
+            grid-template-rows: repeat(2, minmax(21px,auto));
+            justify-content: space-between;
+            align-content:space-between;
+
+            
+        }
+        &-title{
+            display: block;
+            position: relative;
+            @include before_circle;
+
+        }
+        &-counted{
+            justify-self: end;
+        }
+        
+        &-divider{
+            background-color: #E8E4DE;
+            height: 14px;
+            border-radius: 4px;
+            width: 100%;
+            grid-column: 1/3;
+            .background{
+                height: 14px;
+                background-color: $main-color;
+                border-radius: 4px;
+            }
+        }
+    }
+}
